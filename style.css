@@ -1,0 +1,484 @@
+/* Reset en basisstyling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("gallery/food-site-background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+#header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+#header img {
+    max-height: 80px;
+    width: auto;
+}
+
+#header h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 600;
+}
+
+/* Intro */
+#intro {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#intro-text h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#btn_intro {
+    background-color: gold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn_intro:hover {
+    background-color: #000;
+    color: wheat;
+}
+
+/* Social Media Icons */
+#social-media-icons {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #262020;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#social-media-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+#social-media-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Welkom */
+#welkom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#welkom-img, #welkom-text {
+    flex: 1;
+    min-width: 100%;
+}
+
+#welkom-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#welkom-text {
+    background: rgba(34, 34, 38, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#welkom-text-heading h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#welkom-text-paragraph p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    font-weight: 300;
+}
+
+/* Menu */
+#menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #262020;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#menu-h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-body {
+    flex: 1;
+    min-width: 100%;
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.card-title {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#card-hr {
+    border: 1px dashed goldenrod;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    flex: 1;
+    text-align: left;
+}
+
+.price {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    color: goldenrod;
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+/* Catering */
+#catering {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+#catering-h2 {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#catering-h2 h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#catering-h2 p {
+    color: goldenrod;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+#catering-cat {
+    margin-top: 30px;
+}
+
+#catering-cat1, #catering-cat2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cat-item {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.cat-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.cat-item h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    color: #333;
+}
+
+.cat-item:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+/* Opening Times */
+#opening {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    border-radius: 20px;
+}
+
+#opening-h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.opening-times h3 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    margin: 10px 0;
+}
+
+.opening-times p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+/* Contact */
+#contact {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    border-radius: 20px;
+}
+
+#contact h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#contact-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+#message {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-form {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    border: 2px solid goldenrod;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+    background: goldenrod;
+    color: black;
+}
+
+/* Address */
+#adress {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    border-radius: 50%;
+}
+
+#adress h2 {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    margin: 10px 0;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    margin: 40px 0;
+}
+
+#map iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5));
+    padding: 30px;
+}
+
+#face {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#face div {
+    flex: 1;
+    min-width: 100%;
+}
+
+h6 {
+    color: goldenrod;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#face p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    font-weight: 300;
+}
+
+#contact_footer {
+    text-align: left;
+}
+
+#copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#copy a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#copy a:hover {
+    color: goldenrod;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    #welkom-img, #welkom-text {
+        min-width: calc(50% - 20px);
+    }
+
+    .card-body {
+        min-width: calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    .cat-item {
+        width: calc(33.33% - 20px);
+    }
+
+    #face div {
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contact-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #btn_intro, .btn-form {
+        padding: 10px 20px;
+    }
+}
